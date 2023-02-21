@@ -28,7 +28,7 @@
                             <div class="overflow-hidden">
                                 @if(count($users) == 0)
                                 <div class="m-2 rounded-lg p-1 hover:opacity-50 transition duration-400">
-                                    <img src="/src/img/icons/undraw_no_data_re_kwbl.svg" class="mx-auto" width="200px" alt="">
+                                    <img src="{{asset('/src/img/icons/undraw_no_data_re_kwbl.svg')}}" class="mx-auto" width="200px" alt="">
                                 </div>
                                 @else
                                 <table class="min-w-full">
@@ -64,7 +64,7 @@
                                                     <div x-data={open:false}>
                                                         <button title="edit role" @click="open=true">
                                                             <div class="m-2 rounded-lg bg-primary p-1 hover:opacity-50 transition duration-400">
-                                                                <img src="/src/img/icons/edit.png"width="25px" alt="">
+                                                                <img src="{{asset('/src/img/icons/edit.png')}}" width="25px" alt="">
                                                             </div>
                                                         </button>
             
@@ -107,7 +107,7 @@
                                                     @if($user->role_id == 3)
                                                     <button title="block user" type="submit" wire:click="deleteConfirm('{{$user->username}}')">
                                                         <div class="m-2 rounded-l p-1 hover:opacity-50 transition duration-400">
-                                                            <img src="/src/img/icons/stop.png"width="25px" alt="">
+                                                            <img src="{{asset('/src/img/icons/stop.png')}}" width="25px" alt="">
                                                         </div>
                                                     </button>
                                                     @endif

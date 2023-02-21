@@ -47,7 +47,7 @@
                     <div class="overflow-hidden">
                         @if(count($reports) == 0)
                         <div class="m-2 rounded-lg p-1 hover:opacity-50 transition duration-400">
-                            <img src="/src/img/icons/undraw_no_data_re_kwbl.svg" class="mx-auto" width="200px" alt="">
+                            <img src="{{asset('/src/img/icons/undraw_no_data_re_kwbl.svg')}}" class="mx-auto" width="200px" alt="">
                         </div>
                         @else
                         <table class="min-w-full">
@@ -74,7 +74,7 @@
                                         <td class="text-gray-900 font-light py-4">
                                             <a title="laporan" href="{{ $report->report }}" target="_blank" class="">
                                                 <div class="m-2 rounded-lg hover:opacity-50 transition duration-400">
-                                                    <img src="/src/img/icons/report.png"width="25px" alt="">
+                                                    <img src="{{asset('/src/img/icons/report.png')}}" width="25px" alt="">
                                                 </div>
                                             </a>
                                         </td>

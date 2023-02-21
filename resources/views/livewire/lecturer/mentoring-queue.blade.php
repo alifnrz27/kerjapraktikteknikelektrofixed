@@ -9,7 +9,7 @@
                     <div class="overflow-hidden">
                         @if(count($mentoringsQueue) == 0)
                         <div class="m-2 rounded-lg p-1 hover:opacity-50 transition duration-400">
-                            <img src="/src/img/icons/undraw_no_data_re_kwbl.svg" class="mx-auto" width="200px" alt="">
+                            <img src="{{asset('/src/img/icons/undraw_no_data_re_kwbl.svg')}}" class="mx-auto" width="200px" alt="">
                         </div>
                         @else
                         <table class="min-w-full">
@@ -46,7 +46,7 @@
                                                 @csrf
                                                 <button type="submit">
                                                     <div class="m-2 rounded-lg bg-primary p-1 hover:opacity-50 transition duration-400">
-                                                        <img src="/src/img/icons/check.png"width="25px" alt="">
+                                                        <img src="{{asset('/src/img/icons/check.png')}}" width="25px" alt="">
                                                     </div>
                                                 </button>
                                             </form>
@@ -56,7 +56,7 @@
                                                 <div x-data={open:false}>
                                                     <button title="update" @click="open=true">
                                                         <div class="m-2 rounded-lg  min-w-[150px] bg-primary p-3 hover:opacity-50 transition text-white duration-400">
-                                                            <img src="/src/img/icons/edit.png"width="25px" alt="">
+                                                            <img src="{{asset('/src/img/icons/edit.png')}}" width="25px" alt="">
                                                         </div>
                                                     </button>
                                                     <div x-cloak x-show="open" x-transition class="fixed top-0 left-0 w-full h-full bg-black/50 flex justify-center items-center">
@@ -103,7 +103,7 @@
                                             <form title="hapus" wire:submit.prevent="confirmCancelMentoring({{ $q->id }})">
                                                 <button type="submit">
                                                     <div class="m-2 rounded-lg bg-red-500 p-1 hover:opacity-50 transition duration-400">
-                                                        <img src="/src/img/icons/garbage.png"width="25px" alt="">
+                                                        <img src="{{asset('/src/img/icons/garbage.png')}}" width="25px" alt="">
                                                     </div>
                                                 </button>
                                             </form>

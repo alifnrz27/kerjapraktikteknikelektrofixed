@@ -10,7 +10,7 @@
                         <div class="overflow-hidden">
                             @if(count($submissions) == 0)
                             <div class="m-2 rounded-lg p-1 hover:opacity-50 transition duration-400">
-                                <img src="/src/img/icons/undraw_no_data_re_kwbl.svg" class="mx-auto" width="200px" alt="">
+                                <img src="{{asset('/src/img/icons/undraw_no_data_re_kwbl.svg')}}" class="mx-auto" width="200px" alt="">
                             </div>
                             @else
                             <table class="min-w-full">
@@ -57,14 +57,14 @@
                                         <td class="text-sm text-gray-900 font-light px-6 py-4 flex">
                                             <button title="terima" type="button" wire:click="acceptConfirm('{{$s->user->username}}', {{$s->id}})">
                                                 <div class="m-2 rounded-lg bg-primary p-1 hover:opacity-50 transition duration-400">
-                                                    <img src="/src/img/icons/check.png"width="25px" alt="">
+                                                    <img src="{{asset('/src/img/icons/check.png')}}" width="25px" alt="">
                                                 </div>
                                             </button>
 
                                             <div x-data={open:false}>
                                                 <button title="tolak" @click="open=true">
                                                     <div class="m-2 rounded-lg bg-red-500 p-1 hover:opacity-50 transition duration-400">
-                                                        <img src="/src/img/icons/garbage.png"width="25px" alt="">
+                                                        <img src="{{asset('/src/img/icons/garbage.png')}}" width="25px" alt="">
                                                     </div>
                                                 </button>
                                                 <div x-cloak x-show="open" x-transition class="fixed top-0 left-0 w-full h-screen bg-black/50 flex justify-center items-center">

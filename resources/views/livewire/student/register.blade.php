@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <div class="m-2 rounded-lg p-1">
-                    <img src="/src/img/icons/undraw_winners_re_wr1l.svg" class="mx-auto hover:opacity-50 transition duration-400" width="200px" alt="">
+                    <img src="{{asset('/src/img/icons/undraw_winners_re_wr1l.svg')}}" class="mx-auto hover:opacity-50 transition duration-400" width="200px" alt="">
                     <a href="/dashboard" type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-2/12 hover:opacity-80 hover:shadow-lg mt-4 block mx-auto transition duration-500 text-center">Kembali</a>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="m-2 rounded-lg p-1">
-                <img src="/src/img/icons/undraw_winners_re_wr1l.svg" class="mx-auto hover:opacity-50 transition duration-400" width="200px" alt="">
+                <img src="{{asset('/src/img/icons/undraw_winners_re_wr1l.svg')}}" class="mx-auto hover:opacity-50 transition duration-400" width="200px" alt="">
                 <a href="/dashboard" type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-2/12 hover:opacity-80 hover:shadow-lg mt-4 block mx-auto transition duration-500 text-center">Kembali</a>
             </div>
         </div>

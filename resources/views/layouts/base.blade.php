@@ -11,14 +11,14 @@
         @endif
 
         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="src/img/icons/elektro.png">
+        <link rel="icon" type="image/x-icon" href="{{asset('src/img/icons/elektro.png')}}">
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js"></script>
 
-        <link rel="stylesheet" href="/src/css/output.css">
-        <link rel="stylesheet" href="/src/css/app.css">
+        <link rel="stylesheet" href="{{asset('/src/css/output.css')}}">
+        <link rel="stylesheet" href="{{asset('/src/css/app.css')}}">
         @livewireStyles
         @livewireScripts
 

@@ -78,7 +78,7 @@
                             <div class="overflow-hidden">
                                 @if(count($calendars) == 0)
                                 <div class="m-2 rounded-lg p-1 hover:opacity-50 transition duration-400">
-                                    <img src="/src/img/icons/undraw_no_data_re_kwbl.svg" class="mx-auto" width="200px" alt="">
+                                    <img src="{{asset('/src/img/icons/undraw_no_data_re_kwbl.svg')}}" class="mx-auto" width="200px" alt="">
                                 </div>
                                 @else
                                 <table class="min-w-full">
@@ -112,7 +112,7 @@
                                                 <td class="text-sm text-gray-900 font-light px-6 py-4 flex">
                                                     <button type="button" wire:click="deleteConfirm({{$calender->id}})">
                                                         <div class="m-2 rounded-lg bg-red-500 p-1 hover:opacity-50 transition duration-400">
-                                                            <img src="/src/img/icons/garbage.png"width="25px" alt="">
+                                                            <img src="{{asset('/src/img/icons/garbage.png')}}" width="25px" alt="">
                                                         </div>
                                                     </button>
                                                 </td>

@@ -34,11 +34,11 @@ Route::middleware('guest')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-        Route::get('/dashboard', Dashboard::class)->name('home');
-        Route::get('/calendar', Calendar::class);
-        Route::get('/user/profile', Profile::class);
-        Route::get('/users', User::class);
-        Route::get('/student-register', StudentRegister::class);
+        Route::get('/public/dashboard', Dashboard::class)->name('home');
+        Route::get('/public/calendar', Calendar::class)->name('calendar');
+        Route::get('/public/user/profile', Profile::class)->name('profile');
+        Route::get('/public/users', User::class)->name('users');
+        Route::get('/public/student-register', StudentRegister::class)->name('studentRegister');
 
     Route::post('logout', [LogoutController::class, 'logout'])
         ->name('logout');

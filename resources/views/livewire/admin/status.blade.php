@@ -18,7 +18,7 @@
                                     <div class="overflow-hidden">
                                         @if(count($statusHistory) == 0)
                                         <div class="m-2 rounded-lg p-1 hover:opacity-50 transition duration-400">
-                                            <img src="/src/img/icons/undraw_no_data_re_kwbl.svg" class="mx-auto" width="200px" alt="">
+                                            <img src="{{asset('/src/img/icons/undraw_no_data_re_kwbl.svg')}}" class="mx-auto" width="200px" alt="">
                                         </div>
                                         @else
                                         <table class="min-w-full">
@@ -46,13 +46,13 @@
                                                         @if($s->user->active_id == 1)    
                                                             <button type="button"  wire:click="acceptUpdateConfirm('{{ $s->user_id }}', {{ $s->id }})">
                                                                 <div class="m-2 rounded-lg bg-primary p-1 hover:opacity-50 transition duration-400">
-                                                                    <img src="/src/img/icons/graduated.png"width="25px" alt="">
+                                                                    <img src="{{asset('/src/img/icons/graduated.png')}}" width="25px" alt="">
                                                                 </div>
                                                             </button>
                                                         @elseif($s->user->active_id == 0)
                                                             <button type="button" wire:click="declineUpdateConfirm('{{ $s->user_id }}', {{ $s->id }})">
                                                                 <div class="m-2 rounded-lg bg-red-500 p-1 hover:opacity-50 transition duration-400">
-                                                                    <img src="/src/img/icons/stop.png"width="25px" alt="">
+                                                                    <img src="{{asset('/src/img/icons/stop.png')}}" width="25px" alt="">
                                                                 </div>
                                                             </button>
                                                         @endif
@@ -76,7 +76,7 @@
                     <div class="overflow-hidden">
                         @if(count($status) == 0)
                         <div class="m-2 rounded-lg p-1 hover:opacity-50 transition duration-400">
-                            <img src="/src/img/icons/undraw_no_data_re_kwbl.svg" class="mx-auto" width="200px" alt="">
+                            <img src="{{asset('/src/img/icons/undraw_no_data_re_kwbl.svg')}}" class="mx-auto" width="200px" alt="">
                         </div>
                         @else
                         <table class="min-w-full">
@@ -103,12 +103,12 @@
                                     <td class="text-sm text-gray-900 font-light px-6 py-4 flex">
                                         <button title="terima" type="button" wire:click="acceptConfirm('{{ $s->user_id }}', {{ $s->id }})">
                                             <div class="m-2 rounded-lg bg-primary p-1 hover:opacity-50 transition duration-400">
-                                                <img src="/src/img/icons/graduated.png"width="25px" alt="">
+                                                <img src="{{asset('/src/img/icons/graduated.png')}}" width="25px" alt="">
                                             </div>
                                         </button>
                                         <button title="tolak" type="button" wire:click="declineConfirm('{{ $s->user_id }}', {{ $s->id }})">
                                             <div class="m-2 rounded-lg bg-red-500 p-1 hover:opacity-50 transition duration-400">
-                                                <img src="/src/img/icons/stop.png"width="25px" alt="">
+                                                <img src="{{asset('/src/img/icons/stop.png')}}" width="25px" alt="">
                                             </div>
                                         </button>
                                     </td>
