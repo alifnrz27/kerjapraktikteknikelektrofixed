@@ -22,14 +22,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect('/dashboard');
+    return redirect(route('home'));
 });
 
 Route::middleware('guest')->group(function () {
-    Route::get('login', Login::class)
+    Route::get('/public/login', Login::class)
         ->name('login');
 
-    Route::get('register', Register::class)
+    Route::get('/public/register', Register::class)
         ->name('register');
 });
 
